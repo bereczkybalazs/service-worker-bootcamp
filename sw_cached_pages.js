@@ -42,3 +42,14 @@ self.addEventListener('activate', (event) => {
         })
     )
 })
+
+self.addEventListener('fetch', (event) => {
+    console.log('service worker fetching');
+    event.respondWith(
+        //load the request on online
+        fetch(event.request).catch(() => {
+            //load cache on offline
+            caches.match(e.request)
+        })
+    )
+})
