@@ -49,7 +49,7 @@ self.addEventListener('fetch', (event) => {
         //load the request on online
         fetch(event.request).catch(() => {
             //load cache on offline
-            caches.match(e.request)
+            caches.match(event.request)
         })
     )
 })
