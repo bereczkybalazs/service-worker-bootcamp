@@ -1,0 +1,38 @@
+.wallpaper img {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navigation {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: white;
+    padding: 10px;
+    z-index: 1;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.content {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    color: deeppink;
+    z-index: 1;
+    bottom: 30px;
+    right: 30px;
+    width: 25vw;
+    padding: 5px;
+}
+.content-yoshi {
+    background: rgba(255, 255, 255, 0.5);
+    color: orangered;
+
+}
